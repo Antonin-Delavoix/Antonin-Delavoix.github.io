@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Antonin Delavoix, Concepteur Développeur Web Full Stack et étudiant à cs2i Bourgogne.">
+    <title>Antonin Delavoix | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Antonin<span>Delavoix</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#a-propos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="#contact" class="nav-link btn-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Bonjour, je suis</span>
+                <h1>Antonin Delavoix</h1>
+                <h2 class="typewriter">Concepteur Développeur Web Full Stack</h2>
+                <p>Étudiant à <strong>cs2i Bourgogne - Ecole Supérieure d'Informatique</strong>. Passionné par le développement Web, la cybersécurité et la création d'expériences numériques uniques.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#parcours" class="btn btn-outline">Voir mon parcours</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/antonin-delavoix-3781b0266/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Antonin-Delavoix" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:21antonind12@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="moi.jpg" alt="Antonin Delavoix">
+                </div>
+            </div>
+        </div>
+        <a href="#a-propos" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="a-propos" class="section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Basé à <strong>Fourchambault, Bourgogne-Franche-Comté</strong>, je suis un développeur passionné en pleine formation. 
+                        J'aime résoudre des problèmes complexes et transformer des idées en réalité grâce au code.
+                    </p>
+                    <p>
+                        Au-delà du développement, je m'intéresse à la <strong>cybersécurité</strong> et au respect des données (RGPD). 
+                        Je suis également magicien bénévole, ce qui m'a appris l'importance de la présentation, de la communication et de l'effet "waouh" !
+                    </p>
+                    <ul class="about-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Fourchambault, France</li>
+                        <li><i class="fas fa-graduation-cap"></i> BTS CIEL / Bachelor (en cours)</li>
+                        <li><i class="fas fa-language"></i> Français</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Full Stack</h3>
+                        <p>Développement complet</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Sécurité</h3>
+                        <p>Sensibilisé Cyber & RGPD</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-magic"></i>
+                        <h3>Créatif</h3>
+                        <p>Approche originale</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competences" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences</h2>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-laptop-code"></i> Développement</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-html5" style="color: #e34f26;"></i>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt" style="color: #1572b6;"></i>
+                        <h4>CSS3 / SCSS</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js" style="color: #f7df1e;"></i>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code" style="color: #68217a;"></i>
+                        <h4>C#</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database" style="color: #00758f;"></i>
+                        <h4>SQL / Bases de données</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-visualstudio-plain" style="color: #5c2d91;"></i> <!-- Using FA fallback -->
+                        <i class="fas fa-code-branch" style="color: #5c2d91;"></i>
+                        <h4>Visual Studio</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3><i class="fas fa-tools"></i> Autres Compétences</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-tasks"></i>
+                        <h4>Gestion de projet</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-bug"></i>
+                        <h4>Débogage</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h4>Cybersécurité</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-file-contract"></i>
+                        <h4>RGPD</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-palette"></i>
+                        <h4>Arts plastiques</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-video"></i>
+                        <h4>Montage vidéo</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="parcours" class="section">
+        <div class="container">
+            <h2 class="section-title">Mon Parcours</h2>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-column">
+                    <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+                    <div class="timeline">
+                        <!-- CS2I -->
+                        <div class="timeline-item">
+                            <span class="date">Sept. 2025 - Présent</span>
+                            <h4>Concepteur Développeur Web Full Stack</h4>
+                            <span class="place">cs2i Bourgogne</span>
+                            <p>Programmation & Développement web.</p>
+                            <p class="tech-stack">C#, HTML/CSS, JS, PHP, Python, SQL, Merise/UML, gestion de projet</p>
+                        </div>
+                        <!-- BTS CIEL-->
+                        <div class="timeline-item">
+                            <span class="date">2023 - 2025</span>
+                            <h4>Cybersécurité, informatique et réseaux, électronique</h4>
+                            <span class="place">cs2i Bourgogne</span>
+                            <p>Brevet de technicien supérieur (BTS) CIEL, Cybersécurité, informatique et réseaux, électronique.</p>
+                            <p class="tech-stack">C#, HTML/CSS, JS, PHP, Python, SQL, Merise/UML, Réseau (CISCO, DNS, AD)</p>
+                        </div>
+                        <!-- Lycée -->
+                        <div class="timeline-item">
+                            <span class="date">2020 - 2023</span>
+                            <h4>Baccalauréat Scientifique</h4>
+                            <span class="place">Lycée Alain Colas</span>
+                            <p>Mention Assez Bien. Options Arts plastiques, Maths, SVT.</p>
+                        </div>
+                        <!-- Collège -->
+                        <div class="timeline-item">
+                            <span class="date">Jusqu'à 2020</span>
+                            <h4>Diplôme national du brevet</h4>
+                            <span class="place">Collège Paul Langevin</span>
+                            <p>Mention Très Bien.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-column">
+                    <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                    <div class="timeline">
+                        <div class="timeline-item cert-item">
+                            <div class="cert-header">
+                                <i class="fab fa-microsoft cert-icon"></i>
+                                <div>
+                                    <h4>Microsoft Foundational C#</h4>
+                                    <span class="date">Juillet 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item cert-item">
+                            <div class="cert-header">
+                                <i class="fas fa-shield-alt cert-icon"></i>
+                                <div>
+                                    <h4>L'atelier RGPD (CNIL)</h4>
+                                    <span class="date">Avril 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item cert-item">
+                            <div class="cert-header">
+                                <i class="fas fa-lock cert-icon"></i>
+                                <div>
+                                    <h4>Introduction to Cybersecurity</h4>
+                                    <span class="date">Août 2023</span>
+                                    <small>Cisco</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item cert-item">
+                            <div class="cert-header">
+                                <i class="fas fa-check-circle cert-icon"></i>
+                                <div>
+                                    <h4>Pix</h4>
+                                    <span class="date">Janv. 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h3><i class="fas fa-hands-helping"></i> Bénévolat</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">Sept. 2021 - Aujourd'hui</span>
+                                <h4>Magicien</h4>
+                                <span class="place">Cercle Magique Nivernais & Festival Talents de Scène</span>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">Avr. 2013 - Aujourd'hui</span>
+                                <h4>Organisation</h4>
+                                <span class="place">Festival Tant de Paroles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <h2 class="section-title">Me Contacter</h2>
+            <p class="contact-subtitle">Une idée ? Un projet ? N'hésitez pas à m'envoyer un message !</p>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" action="#" width="100%">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <!-- Note: Le formulaire n'a pas de backend réel pour l'instant -->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Antonin<span> Delavoix</span></div>
+            <p>&copy; 2025 Antonin Delavoix. Tous droits réservés.</p>
+            <div class="social-links small">
+                <a href="https://www.linkedin.com/in/antonin-delavoix-3781b0266/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Antonin-Delavoix"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
