@@ -39,6 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const MAX_SUBMISSIONS = 3;
     const COOLDOWN_HOURS = 24;
 
+    // Vérifier si on revient après un envoi réussi
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        showFormStatus('Message envoyé avec succès ! Je vous répondrai bientôt.', 'success');
+        // Vider le formulaire
+        if (contactForm) {
+            contactForm.reset();
+        }
+        // Nettoyer l'URL sans recharger la page
+        window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+    }
+
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
             // Vérifier le nombre d'envois
@@ -111,9 +123,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (formStatus) {
             formStatus.textContent = message;
             formStatus.className = 'form-status ' + type;
+            formStatus.style.display = 'block';
 
-            // Masquer le message après 5 secondes (sauf pour "envoi en cours")
-            if (message !== 'Envoi en cours...') {
+            // Masquer le message après 10 secondes pour les messages de succès
+            if (message.includes('succès')) {
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 10000);
+            } else if (message !== 'Envoi en cours...') {
+                // Masquer les messages d'erreur après 5 secondes
                 setTimeout(() => {
                     formStatus.style.display = 'none';
                 }, 5000);
