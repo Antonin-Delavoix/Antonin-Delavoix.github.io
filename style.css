@@ -151,9 +151,27 @@ ul {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo span {
+.logo-img {
+    height: 45px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
+}
+
+.logo-text {
+    display: flex;
+    gap: 0;
+}
+
+.logo-text span {
     color: var(--lightest-slate);
 }
 
@@ -793,6 +811,29 @@ ul {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--primary-color);
+}
+
+.form-status {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: var(--font-heading);
+    display: none;
+}
+
+.form-status.success {
+    display: block;
+    background-color: rgba(100, 255, 218, 0.1);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.form-status.error {
+    display: block;
+    background-color: rgba(255, 100, 100, 0.1);
+    border: 1px solid #ff6464;
+    color: #ff6464;
 }
 
 /* Footer */

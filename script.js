@@ -33,8 +33,49 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Add some dynamic typing effect simple fallback or enhancement?
-    // Kept simple for now as requested in plan.
+    // Contact Form Handling
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            // Validation basique avant envoi
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !message) {
+                e.preventDefault();
+                showFormStatus('Veuillez remplir tous les champs.', 'error');
+                return;
+            }
+
+            // Validation email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                e.preventDefault();
+                showFormStatus('Veuillez entrer une adresse email valide.', 'error');
+                return;
+            }
+
+            // Si tout est OK, le formulaire sera soumis à FormSubmit
+            showFormStatus('Envoi en cours...', 'success');
+        });
+    }
+
+    function showFormStatus(message, type) {
+        if (formStatus) {
+            formStatus.textContent = message;
+            formStatus.className = 'form-status ' + type;
+
+            // Masquer le message après 5 secondes (sauf pour "envoi en cours")
+            if (message !== 'Envoi en cours...') {
+                setTimeout(() => {
+                    formStatus.style.display = 'none';
+                }, 5000);
+            }
+        }
+    }
 });
 
 // Helper for scroll effects
