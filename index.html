@@ -368,7 +368,16 @@
             <p class="contact-subtitle">Une idée ? Un projet ? N'hésitez pas à m'envoyer un message !</p>
             
             <div class="contact-wrapper">
-                <form class="contact-form" action="#" width="100%">
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/21antonind12@gmail.com" method="POST">
+                    <!-- Configuration FormSubmit -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://antonin-delavoix.github.io/#contact">
+                    
+                    <!-- Honeypot pour bloquer les bots -->
+                    <input type="text" name="_honey" style="display:none">
+                    
                     <div class="form-group">
                         <label for="name">Nom</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom" required>
